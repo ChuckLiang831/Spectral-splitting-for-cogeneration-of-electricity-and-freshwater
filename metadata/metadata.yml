@@ -1,0 +1,35 @@
+metadata_version: 1
+name: Bio-inspired spectral-splitting-synergized photovoltaic cooling and multistage
+  desalination (G. Liang, F. Li, H. Lin, W. Guan, Z. Sui, Y. Sui, J. Shang, G. Yu,
+  W. Wu)
+description: This code is the theoretical calculation code for the paper entitled
+  "Bio-inspired spectral-splitting-synergized photovoltaic cooling and multistage
+  desalination".
+authors:
+- name: Guangda Liang
+  affiliations:
+  - name: City University of Hong Kong
+- name: Fuxiang Li
+  affiliations:
+  - name: City University of Hong Kong
+- name: Haosheng Lin
+  affiliations:
+  - name: City University of Hong Kong
+- name: Weixin Guan
+  affiliations:
+  - name: University of Texas at Austin
+- name: Zengguang Sui
+  affiliations:
+  - name: City University of Hong Kong
+- name: Yunren Sui
+  affiliations:
+  - name: City University of Hong Kong
+- name: Jin Shang
+  affiliations:
+  - name: City University of Hong Kong
+- name: Guihua Yu
+  affiliations:
+  - name: University of Texas at Austin
+- name: Wei Wu
+  affiliations:
+  - name: City University of Hong Kong
