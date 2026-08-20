@@ -2,6 +2,9 @@ import math
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+
+
 
 # ------------variables & constants---------
 q_sun = 1000  # Wm-2
@@ -45,7 +48,6 @@ def TAmodule(n,q_inlet):
     q_net = [i for i in range(n)]
     J_eva = [i for i in range(n)]
     q_guess = [i for i in range(n)]
-    # 初始化传入的参数
     q_guess[n - 1] = q_inlet
     T_b[n - 1] = 22+273
 
@@ -225,6 +227,8 @@ def PVmodule(n,q_inlet,eta_ref,beta):
     T_b = [x-273.15 for x in T_b ]
 
     return T_f, T_b, q_cond, qconv_PV, qrad_PV, q_eva, q_side, q_out, q_in, q_net, 0, 0, J_eva, p_PV
+    
+os.makedirs('./results', exist_ok=True)
 
 # ---------------------------- Fig2. b&c ---------------------------------------------
 q = 1000
@@ -258,7 +262,7 @@ for n in n_values:
     ECD_data[f'{n}S-ECD T_PV'] = PVT_list
 
 ECD_df = pd.DataFrame(ECD_data)
-ECD_df.to_excel('/results/ECD_Eg.xlsx', index=False)
+ECD_df.to_excel('./results/ECD_Eg.xlsx', index=False)
 
 Eg_values = np.arange(0.5, 2.1, 0.1)
 eta_values = [
@@ -313,7 +317,7 @@ for n in n_values:
     SSCD_data[f'{n}S-SSCD eta_Total'] = SSCD_Total_list
 
 SSCD_df = pd.DataFrame(SSCD_data)
-SSCD_df.to_excel('/results/SSCD_Eg.xlsx', index=False)
+SSCD_df.to_excel('./results/SSCD_Eg.xlsx', index=False)
 
 eta_values = [x * 100 for x in [
     0.1394, 0.1806, 0.2281, 0.2513, 0.2864, 0.3082, 0.3223, 0.3274, 0.3257, 0.3291,
@@ -368,7 +372,7 @@ ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper right')
 
 plt.grid(True)
 plt.tight_layout()
-plt.savefig('/results/Fig. 2 b&c.png')
+plt.savefig('./results/Fig. 2 b&c.png')
 
 # ------------------------Fig.2 d&e-------------------------
 q = 1000
@@ -401,7 +405,7 @@ for n in n_values:
     ECD_data2[f'{n}S-ECD PCE'] = PCE_list
 
 ECD_df = pd.DataFrame(ECD_data2)
-ECD_df.to_excel('/results/ECD_b.xlsx', index=False)
+ECD_df.to_excel('./results/ECD_b.xlsx', index=False)
 
 q = 697
 eta_values = [0.21]
@@ -443,7 +447,7 @@ for n in n_values:
     SSCD_data2[f'{n}S-SSCD eta_Total'] = Total_list
 
 SSCD_df = pd.DataFrame(SSCD_data2)
-SSCD_df.to_excel('/results/SSCD_b.xlsx', index=False)
+SSCD_df.to_excel('./results/SSCD_b.xlsx', index=False)
 
 plt.figure(figsize=(14, 10))
 
@@ -506,4 +510,4 @@ plt.ylabel(r'$\eta_{ther}$ (%)')
 plt.ylim(0, 500)
 plt.legend()
 plt.tight_layout()
-plt.savefig('/results/Fig. 2 d&e.png')
+plt.savefig('./results/Fig. 2 d&e.png')
