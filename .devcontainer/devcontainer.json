@@ -1,0 +1,6 @@
+{
+  "name": "CodeOcean Docker Env",
+  "build": {
+    "dockerfile": "../environment/Dockerfile"
+  }
+}
