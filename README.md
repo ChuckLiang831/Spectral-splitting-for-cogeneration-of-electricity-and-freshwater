@@ -17,7 +17,7 @@
 
 This repository contains the complete calculation code for the paper *"Bio-inspired spectral decoupling enables simultaneous high-efficiency photovoltaics and ultra-high-rate multistage desalination"* (Liang et al.). The model simulates a spectral-splitting system that simultaneously generates electricity (photovoltaics) and freshwater (multistage desalination), evaluating two configurations: the integrated single-module configuration (ECD) and the spectral-splitting configuration (SSCD).
 
-### Reviewer Verification (Windows, one click)
+### Reproduction Guide (Windows, one click)
 
 1. Click the green **Code** button → **Download ZIP**, and extract it.
 2. Double-click **`run.bat`** in the repository root.
@@ -50,7 +50,7 @@ This project is released under the **MIT license**. Questions and issues are wel
 
 本倉庫包含論文《Bio-inspired spectral decoupling enables simultaneous high-efficiency photovoltaics and ultra-high-rate multistage desalination》（Liang 等）的完整計算程式碼。模型模擬一種分光譜系統，可同時發電（光伏）與產淡水（多級淡化），並評估兩種構型：一體化單模組構型（ECD）與分光譜構型（SSCD）。
 
-### 審稿人驗證（Windows 一鍵執行）
+### 復現指南（Windows 一鍵執行）
 
 1. 點擊倉庫頁綠色 **Code** 按鈕 → **Download ZIP**，下載並解壓縮；
 2. 雙擊倉庫根目錄下的 **`run.bat`**；
@@ -83,7 +83,7 @@ code\results\
 
 本仓库包含论文《Bio-inspired spectral decoupling enables simultaneous high-efficiency photovoltaics and ultra-high-rate multistage desalination》（Liang 等）的完整计算代码。模型模拟一种分光谱系统，可同时发电（光伏）和产淡水（多级淡化），并评估两种构型：一体化单模块构型（ECD）与分光谱构型（SSCD）。
 
-### 审稿人验证（Windows 一键运行）
+### 复现指南（Windows 一键运行）
 
 1. 点击仓库页绿色 **Code** 按钮 → **Download ZIP**，下载并解压；
 2. 双击仓库根目录下的 **`run.bat`**；
